@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @node.name %>
+</p>
+
+<p>
+  <b>Balance:</b>
+  <%= @node.balance %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @node.color %>
+</p>
+
+
+<%= link_to 'Edit', edit_node_path(@node) %> |
+<%= link_to 'Back', nodes_path %>

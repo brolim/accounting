@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Financial</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "raphael-min.js" %>
+  <%= csrf_meta_tag %>
+</head>
+
+<body onload="draw_graph();">
+
+<%= yield %>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+Your graph:
+
+<div id="graph">
+</div>
+
+</body>
+</html>
